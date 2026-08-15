@@ -1,0 +1,65 @@
+{
+  "name": "@bridgenode/llm",
+  "version": "0.2.11",
+  "description": "BridgeNode LLM client \u2014 AI inference for AI agents with x402 payment on Solana USDC. No API keys, no registration.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "node --test --test-isolation=none --test-concurrency=1 --import tsx tests/*.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "license": "MIT-0",
+  "homepage": "https://bridgenode.cc",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/applefanaimail-blip/bridgenode-sdk-ts.git"
+  },
+  "keywords": [
+    "x402",
+    "solana",
+    "usdc",
+    "bridgenode",
+    "ai",
+    "llm",
+    "inference",
+    "agents",
+    "payment",
+    "pay-per-request",
+    "gasless",
+    "no-api-key",
+    "openai-compatible",
+    "stablecoin",
+    "micropayments",
+    "sdk",
+    "typescript"
+  ],
+  "dependencies": {
+    "@solana/kit": "^5.5.1",
+    "@x402/core": "~2.21.0",
+    "@x402/extensions": "^2.21.0",
+    "@x402/svm": "~2.21.0",
+    "dotenv": "^17.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.1.2",
+    "tsx": "^4.20.0",
+    "typescript": "^5.7.0"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "author": "BridgeNode <eli.BNx@proton.me>"
+}
